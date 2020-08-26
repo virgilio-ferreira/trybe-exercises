@@ -4,22 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Portifólio Virgílio</title>
+    <style>
+        /*cascade style sheets, não é o HTML, mas está dentro dele, colocando o style dentro da <head> */
+        /*tudo que for escrito dentro do style será interpretado como o CSS */
+        /*No CSS você influencia no HTML através de seletores, os seletores usam chaves { } e não colchetes [ ]  */
+        /*Dentro dos seletores você coloca as declarações  */
+        /*Por exemplo para mudar a cor: */
+    h1{
+        /*Atenção a sintaxe das declarações, tem os dois pontos e terminam com o ponto e vírgula*/
+        color: rgba(16, 23, 24, 0.815);/*Quando digitar o rgb e os parenteses, deixar o cursor acima do parentese que abre o seletor */
+    }
+    /*Esse acima vai mudar todos os h2, para mudar toda a cor do fundo do body da página usa-se:*/
+    body{
+	background-color:rgb(55, 95, 128);
+    }
+    p {
+    color:bisque;
+    font-family: "Helvetica", sans-serif;
+    /*Sans-serif é um nome de uma família, vai com a biblioteca de cada usuário*/
+    /*Se quiser uma especifica coloca entre aspas e coloca uma segunda opção de familia depois de uma vírgula*/
+
+    font-size: 11px;
+    font-size 1.5em;
+    /*px é pixel e em é uma medida relativa ao body*/
+    }
+    #id-sem-espaços {
+	/*coloca aqui as declarações*/
+	/*id tem que ser exclusivos */
+}
+
+    .class-sem-espaços {
+	/*coloca aqui as declarações*/
+	/*classes influenciam todas as classes */
+    }
+
+    </style>
+
   </head>
   <body>
     <!--insira os elementos aqui -->
     <h1>
         Virgílio José Martins Ferreira Neto
     </h1>    
+    <!-- border-radius="50%" -->
     <img 
-    id="foto_rosto"
+    id="foto_rosto" 
     alt="Foto do rosto do Virgílio olhando para frente, em preto e branco" 
     width="200" 
     src="https://media-exp1.licdn.com/dms/image/C4E03AQH_d16INW_BLg/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=3LKBOcSIT-4D8BLVESnq754dyYJ5wDz06tdk9-_v1uQ" ]
     >
     <ul>
         <li><a href="#foto_rosto">Seção 1</a></li>
-        <li><a href="#foto_rosto">Seção 1</a></li>
-        <li><a href="#foto_rosto">Seção 1</a></li>
+        <li><a href="#foto_rosto">Seção 2</a></li>
+        <li><a href="#foto_rosto">Seção 3</a></li>
     </ul>
     <p>
         Brasileiro, morador de Niterói, RJ.
