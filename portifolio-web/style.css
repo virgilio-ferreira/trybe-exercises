@@ -1,5 +1,4 @@
-
-
+/*Não tem cabeçário igual o HTML*/
 /*cascade style sheets, não é o HTML, mas está dentro dele, colocando o style dentro da <head> */
 /*tudo que for escrito dentro do style será interpretado como o CSS */
 /*No CSS você influencia no HTML através de seletores, os seletores usam chaves { } e não colchetes [ ]  */
@@ -51,12 +50,13 @@
     }
     .link {
         color: rgba(179, 192, 190, 0.712);
-        position: relative
-        /*bottom: 1%;*/
-        /*margin: 1%;*/
-        /*padding: 35px;*/
-        /*clear: both;*/
-    
+        position: relative;
+        top: 80px;
+        margin: 15px;
+        padding: 10px;
+        clear: both;
+        border: 1px solid blue;
+
     }
 
     a:hover {
