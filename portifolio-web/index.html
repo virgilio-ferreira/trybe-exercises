@@ -1,110 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Portifólio Virgílio</title>
-    <style>
-        /*cascade style sheets, não é o HTML, mas está dentro dele, colocando o style dentro da <head> */
-        /*tudo que for escrito dentro do style será interpretado como o CSS */
-        /*No CSS você influencia no HTML através de seletores, os seletores usam chaves { } e não colchetes [ ]  */
-        /*Dentro dos seletores você coloca as declarações  */
-        /*Por exemplo para mudar a cor: */
-    h1{
-        /*Atenção a sintaxe das declarações, tem os dois pontos e terminam com o ponto e vírgula*/
-        color: rgba(16, 23, 24, 0.515);/*Quando digitar o rgb e os parenteses, deixar o cursor acima do parentese que abre o seletor */
-    }
-    /*Esse acima vai mudar todos os h2, para mudar toda a cor do fundo do body da página usa-se:*/
-    body{
-	background-color:rgb(55, 95, 128);
-    }
-    p {
-    color:bisque;
-    font-family: "Helvetica", sans-serif;
-    /*Sans-serif é um nome de uma família, vai com a biblioteca de cada usuário*/
-    /*Se quiser uma especifica coloca entre aspas e coloca uma segunda opção de familia depois de uma vírgula*/
-    font-size: 18px;
-    /*font-size 1.5em;
-    /*px é pixel e em é uma medida relativa ao body*/
-    }
-    .nome {
-        font-style: italic;
-        background-color: blanchedalmond;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 35%;
-    }
-    .foto-rosto {
-        border-radius: 50%;
-        float: left;
-        margin: 15px;
-        margin-right: 50px;
-        padding: 1%;
-        background-color: black;
-	/*coloca aqui as declarações*/
-	/*id tem que ser exclusivos */
-    }
-    .indice {
-        background-color:rgba(179, 192, 190, 0.712); 
-        width: 10%;
-        float: right;
-    }
-    .descrição {
-        font-style:oblique;
-        /*float: right;*/
-    }
-    .link {
-        color: rgba(179, 192, 190, 0.712);
-        position: relative
-        bottom: 50px;
-       
-    }
-   
-    a:hover {
-        color: #000;
-        background-color: rgba(0, 0, 0, 0.200);
-    }
-    
-    </style>
-
-  </head>
-  <body>
-    <div><h1 class="nome">
-            Virgílio José Martins Ferreira Neto
-        </h1>
-    </div>    
-    <div>
-        <img 
-            class="foto-rosto" 
-            alt="Foto do rosto do Virgílio olhando para frente, em preto e branco" 
-            width="200"
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQH_d16INW_BLg/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=3LKBOcSIT-4D8BLVESnq754dyYJ5wDz06tdk9-_v1uQ" ]
-        >
-    </div>
-    <div class="indice">
-        <!--use <div> para colorir paragrafos ou grandes espaços (ele atua em todos elentos)-->
-        <ul>
-        <li><a href="#foto_rosto">Seção 1</a></li>
-        <li><a href="#foto_rosto">Seção 2</a></li>
-        <li><a href="#foto_rosto">Seção 3</a></li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Portifólio Virgílio</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+        <div><h1 class="nome">
+                Virgílio José Martins Ferreira Neto
+            </h1>
+        </div>    
+        <div>
+            <img 
+                class="foto-rosto" 
+                alt="Foto do rosto do Virgílio olhando para frente, em preto e branco" 
+                width="200"
+                src="https://media-exp1.licdn.com/dms/image/C4E03AQH_d16INW_BLg/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=3LKBOcSIT-4D8BLVESnq754dyYJ5wDz06tdk9-_v1uQ" ]
+            >
+        </div>
+        <div class="indice">
+            <!--use <div> para colorir paragrafos ou grandes espaços (ele atua em todos elentos)-->
+            <ul>
+            <li><a href="#foto_rosto">Seção 1</a></li>
+            <li><a href="#foto_rosto">Seção 2</a></li>
+            <li><a href="#foto_rosto">Seção 3</a></li>
+            </ul>
+        </div>
+        <div class="descrição">
+            <p>
+                Brasileiro, morador de Niterói, RJ.
+            </p>
+        </div>
+        <ul><h3><em>Habilidades:</em></h3>
+            <li><h4>Inglês avançado</h4></li>
+            <li><h5>Tamborim iniciante</h5></li>
+            <li><h6><strong>Entusiasta de mandarim</strong></h6></li>
         </ul>
-    </div>
-    <div class="descrição">
-        <p>
-            Brasileiro, morador de Niterói, RJ.
-        </p>
-    </div>
-    <ul><h3><em>Habilidades:</em></h3>
-        <li><h4>Inglês avançado</h4></li>
-        <li><h5>Tamborim iniciante</h5></li>
-        <li><h6><strong>Entusiasta de mandarim</strong></h6></li>
-    </ul>
-    
-    <div><p><a target="_blank" class="link linkedin" href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin">Linkedin</a></p>
-    </div>
-        <p><a class="link" href="#foto_rosto"> Voltar ao topo </a></p>
+        
+        <div><p><a target="_blank" class="link linkedin" href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin">Linkedin</a></p>
+        </div>
+            <p><a class="link" href="#foto_rosto"> Voltar ao topo </a></p>
 
 
-  </body>
+    </body>
 </html>
