@@ -1,0 +1,131 @@
+body {
+    color: black;
+    background-color: rgb(253,251,251);
+    font-family: 'Lato', sans-serif;
+    margin: 0px;        
+}
+
+.topo {
+    color: white;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+}
+
+.trybe {
+    color: green;
+}
+
+.links {
+    background-color: green;    
+    height: 50px;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.topicos {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.lado-esquerdo {    
+    /* float: left; */
+    display: inline-block;
+    width: 50%;
+    height: 290px;
+    /* border: 1px solid black; */
+    margin: 50px 0px 0px 200px;
+}
+
+.perfil {
+    display: inline-block;    
+    width: 235px;
+    border: 1px solid black;
+    margin-top: 21px;
+}
+
+.paragraphy {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 15px;
+    padding: 5px;
+    width: 400px;
+    vertical-align: top;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.lado-direito {
+    float: right;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: center;
+    line-height: 1.5;
+    width: 18%;
+    height: 290px;
+    margin: 50px 200px 0px 0px;
+    /* border: 1px solid black; */    
+}
+
+.listas {
+    text-align: center;
+}
+
+.list1 {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 200px;    
+}
+
+.list2 {
+    display: inline-block;
+    margin: 30px 200px 0px 300px;
+}
+
+.click {
+    text-align: center;
+}
+
+.conteudo {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    /* border: 1px solid black; */
+}
+
+.curso {
+    border-collapse: collapse; /* CSS2 */
+    background: #FFFFF0;     
+    display: block;   
+    padding-left: 80px;
+}
+
+.curso td {
+    border: 1px solid black;
+}
+
+.curso th {
+    border: 1px solid black;
+    background: #F0FFF0;
+}
+
+.fim {
+    color: white;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    text-align: center;    
+}
+
+h5 {
+    padding: 25px;
