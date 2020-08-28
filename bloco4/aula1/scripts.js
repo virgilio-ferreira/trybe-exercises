@@ -24,11 +24,18 @@
 // let y = 3;
 // console.log(++y); // retorna 4
 
-let x=10;
-let y=5;
-console.log(x+y); //retorna 15 no console
-let z = x+y;
-console.log(z);
-console.log(x+=y); //retorna 15 no console
-console.log(x); //retorna 15 no console
+// let x=10;
+// let y=5;
+// console.log(x+y); //retorna 15 no console
+// let z = x+y;
+// console.log(z); //retorna 15 no console
+// console.log(x+=y); //retorna 15 no console
+// console.log(x); //retorna 15 no console
+
+// let x=10;
+// let y=5;
+// console.log(x+y); //retorna 15 no console
+// let z = x+y;
+// console.log(z); //retorna 15 no console
+// console.log(x+=y); //retorna 15 no console
 
