@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="nome">Nome:</label>
+        <input required="required" type="text" name="nome" id='nome' placeholder="Digite seu nome" maxlength="40">
+        <br>
+        <label for="e-mail">E-mail:</label>
+        <input required="required" type="text" name="e-mail" id='e-mail' placeholder="Digite seu e-mail" maxlength="50">
+        <br>
+        <label for="cpf">Cpf:</label>
+        <input required="required" type="text" name="cpf" id='cpf' placeholder="Digite seu cpf" maxlength="11">
+        <br>
+        <label for="endereço">Endereço:</label>
+        <input required="required" type="text" name="endereço" id='endereço' placeholder="Digite seu endereço" maxlength="200">
+        <br>
+        <label for="cidade">Cidade:</label>
+        <input required="required" type="text" name="cidade" id='cidade' placeholder="Digite sua cidade" maxlength="28">
+        <br>
+        <label for="estados">Estado:</label>
+        <select  required="required" name="cidade" id="selectBoxStates">
+            <option selected="selected" value="">Selecione</option>
+        </select>
+        <br>
+        <div>
+            <p>Tipo:</p>
+          <label for="apartamento"><input name="moradia" id="apartamento" value="m" type="radio" required="required">Apartamento</label>
+          <label for="casa"><input name="moradia" id="casa" value="m" type="radio" required="required">Casa</label>
+        </div>
+        
+
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+</html>
