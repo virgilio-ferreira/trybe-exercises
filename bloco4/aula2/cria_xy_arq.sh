@@ -1,6 +1,5 @@
 #Execute arquivo.sh x y
 #Cria x arquivos.js na pasta y
-#Dica: se não quiser outra pasta coloque .
 
 mkdir $2
 cat cont.txt > cont.txt

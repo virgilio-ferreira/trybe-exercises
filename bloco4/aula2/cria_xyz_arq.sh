@@ -1,7 +1,6 @@
 #Execute arquivo.sh x y z
 #Cria x arquivos.js na pasta y com o nome z
-#Dica: se não quiser outra pasta coloque .
-#Se quiser que diga o bloco coloque o nome exercicio4. por exemplo
+# Dica, se não quiser criar uma nova pasta preencha o segundo valor (y) com (.)
 
 mkdir $2
 cat cont.txt > cont.txt
@@ -13,7 +12,7 @@ do
 done
 for i in `cat cont.txt`
 do
-    echo "//exercicio${i}" > "./$2/$3${i}.js"
+    echo "//$3${i}" > "./$2/$3${i}.js"
 done
 
 rm cont.txt
