@@ -1,10 +1,11 @@
 /* exercico do bloco 6 aula 5 */
 
 body {
-
+    font-size: 1.25rem;
+    margin-left: 30px;
 }
 h1 {
-
+    font-size: 2.5rem;
 }
 h2 {
 
@@ -12,8 +13,74 @@ h2 {
 
 img {
     max-width: 100%;
+    
 }
 
 figure {
-    margin: 0;
+    margin-bottom: 25px;
+    
+}
+
+
+
+@media screen and (min-width: 800px max-width: 1300px) {
+    body {
+        background-color: bisque;
+        font-size: 1.0rem;
+        margin: auto
+    }
+
+    p {
+        max-width: 650px;
+    }
+
+    img {
+        max-width: 100%;
+        /* background-color: blue; */
+    }
+    figure {
+        margin-bottom: 25px;
+        /* background-color: red; */
+        max-width: 40%;
+    }
+    .boxColumns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    figcaption {
+        max-width: 100%;
+        /* background-color: black; */
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    body {
+        background-color: rgb(192, 231, 192);
+        font-size: 1.8rem;
+    }
+
+    p {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    img {
+        max-width: 100%;
+        /* background-color: blue; */
+    }
+    figure {
+        margin-bottom: 25px;
+        /* background-color: red; */
+        max-width: 40%;
+    }
+    .boxColumns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;    
+    }
+
+    figcaption {
+        max-width: 100%;
+        /* background-color: black; */
+    }
 }
