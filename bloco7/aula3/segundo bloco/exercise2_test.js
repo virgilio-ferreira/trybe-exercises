@@ -4,7 +4,8 @@ const assert = require('assert');
 
 const removeVowels = (word) => {
     const characters = word.split('');
-    const results = [];
+    let results = [];
+    let contador = 1;
   
     for (let i = 0; i < characters.length; i += 1) {
       if (
@@ -14,16 +15,17 @@ const removeVowels = (word) => {
         characters[i] === 'e' ||
         characters[i] === 'u'
       ) {
-        results.push(characters[i]);
+        // results = results + `${i}`; // resulto incorreto mais muito mais interessantes, retorna: 'D1y3n5'
+        results = results + `${contador}`;
+        contador = contador + 1;
       } else {
-        results.push('_');
+        results = results + `${characters[i]}`;
       }
     }
     return results;
   };
   
-  
   const parameter = 'Dayane';
   const result = 'D1y2n3';
 
-  assert.strictEqual(parameter, result);
+  assert.deepStrictEqual(removeVowels(parameter), result);
