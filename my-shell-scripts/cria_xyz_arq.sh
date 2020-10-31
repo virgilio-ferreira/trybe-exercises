@@ -2,6 +2,7 @@
 #Cria x arquivos.js na pasta y com o nome z
 #Dica: se não quiser outra pasta coloque .
 #Se quiser que diga o bloco coloque o nome exercicio4. por exemplo
+#Para executar coloque ./nome_do_arquivo.sh
 
 mkdir $2
 cat cont.txt > cont.txt
