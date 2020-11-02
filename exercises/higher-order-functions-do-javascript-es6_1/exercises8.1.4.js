@@ -113,9 +113,10 @@ const expected_result = [
 function booksOrderedByReleaseYearDesc() {
   let booksOrder;
   booksOrder = books.sort((a,b) => {
-    // console.log(a.releaseYear, b.releaseYear);
+    console.log(a.releaseYear, b.releaseYear);
     return b.releaseYear - a.releaseYear;
   })
+  console.log(booksOrder);
   return booksOrder;
 }
 // esse foi feito na magia do sort, não tenho ideia da logica por trás
