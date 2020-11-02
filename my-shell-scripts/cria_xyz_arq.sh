@@ -1,6 +1,6 @@
 #Execute arquivo.sh x y z
 #Cria x arquivos.js na pasta y com o nome z
-#Dica: se não quiser outra pasta coloque .
+#Dica: se não quiser outra pasta coloque . (ele reclama mas faz)
 #Se quiser que diga o bloco coloque o nome exercicio4. por exemplo
 
 mkdir $2

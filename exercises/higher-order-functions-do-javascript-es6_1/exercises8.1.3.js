@@ -92,14 +92,14 @@ const expected_result = {
 // assert.deepEqual(getNamedBook(), expected_result); // se quiser usar com forEach
 
 function getNamedBookFind() {
-	// let book26Characters;
-	// books.find((element) => {
-	// 	if(element.name.length === 26){
-	// 		book26Characters = element;
-	// 	}
-	// })
-	// return book26Characters; // versão expandida
-	return books.find(element => element.name.length === 26) // versão enxuta
+	let book26Characters;
+	books.find((element) => {
+		if(element.name.length === 26){
+			book26Characters = element;
+		}
+	})
+	return book26Characters; // versão expandida
+	// return books.find(element => element.name.length === 26) // versão enxuta
 }
 
 assert.deepEqual(getNamedBookFind(), expected_result);
