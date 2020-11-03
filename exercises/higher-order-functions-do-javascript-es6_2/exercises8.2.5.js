@@ -105,6 +105,6 @@ function fantasyOrScienceFictionAuthors() {
   console.log(orderedAuthors);
   return orderedAuthors
 }
-fantasyOrScienceFictionAuthors()
+// fantasyOrScienceFictionAuthors()
 
-// assert.deepEqual(fantasyOrScienceFictionAuthors(), expected_result);
+assert.deepEqual(fantasyOrScienceFictionAuthors(), expected_result);
