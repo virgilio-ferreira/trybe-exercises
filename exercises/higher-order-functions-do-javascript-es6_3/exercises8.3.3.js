@@ -1,1 +1,88 @@
 //exercicio3
+const assert = require('assert');
+
+const books = [
+  {
+    id: 1,
+    name: 'As Crônicas de Gelo e Fogo',
+    genre: 'Fantasia',
+    author: {
+      name: 'George R. R. Martin',
+      birthYear: 1948
+    },
+    releaseYear: 1991,
+  },
+  {
+    id: 2,
+    name: 'O Senhor dos Anéis',
+    genre: 'Fantasia',
+    author: {
+      name: 'J. R. R. Tolkien',
+      birthYear: 1892,
+    },
+    releaseYear: 1954,
+  },
+  {
+    id: 3,
+    name: 'Fundação',
+    genre: 'Ficção Científica',
+    author: {
+      name: 'Isaac Asimov',
+      birthYear: 1920,
+    },
+    releaseYear: 1951,
+  },
+  {
+    id: 4,
+    name: 'Duna',
+    genre: 'Ficção Científica',
+    author: {
+      name: 'Frank Herbert',
+      birthYear: 1920,
+    },
+    releaseYear: 1965,
+  },
+  {
+    id: 5,
+    name: 'A Coisa',
+    genre: 'Terror',
+    author: {
+      name: 'Stephen King',
+      birthYear: 1947
+    },
+    releaseYear: 1986,
+  },
+  {
+    id: 6,
+    name: 'O Chamado de Cthulhu',
+    genre: 'Terror',
+    author: {
+      name: 'H. P. Lovecraft',
+      birthYear: 1890,
+    },
+    releaseYear: 1928,
+  },
+];
+
+const expected_result = 43;
+// Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+
+const reduceAverage = (acc, book, index, array) => {
+  // console.log(book.releaseYear, book.author.birthYear);
+  // acc = book.releaseYear - book.author.birthYear; // assim não soma toda rodada
+  console.log(`acc antes ${acc}`);
+  acc = acc + book.releaseYear - book.author.birthYear;
+  console.log(`acc depois ${acc}`);
+  console.log(`index depois ${acc}`);
+  console.log(acc / (index + 1) );
+  if (index === array.length - 1) return acc / (index + 1);
+  return acc; // faltava colocar esse return acc pra voltar o valor pro acumulador
+}
+
+function averageAge() {
+  // console.log(books.reduce(reduceAverage, 0));
+  return books.reduce(reduceAverage, 0);
+}
+
+// averageAge()
+assert.equal(averageAge(), expected_result);
