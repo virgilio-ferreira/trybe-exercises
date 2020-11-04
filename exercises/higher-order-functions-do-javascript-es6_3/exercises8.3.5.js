@@ -16,10 +16,10 @@ const reduceA = (acumulator, currentString) => {
   currentArray.forEach( element => {
     if (element === 'a' || element === 'A') {
       acumulator = acumulator + 1;
-      // console.log(`acumulator ${acumulator}`);
+      console.log(`acumulator ${acumulator}`);
     }
   });
-  console.log(`acumulator final ${acumulator}`);
+  // console.log(`acumulator final ${acumulator}`);
   return acumulator; // no final esse reduce serviu pra passar o contador de uma string pra outra.
 }
 
