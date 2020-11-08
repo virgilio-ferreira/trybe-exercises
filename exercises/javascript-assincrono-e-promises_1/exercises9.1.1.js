@@ -26,6 +26,8 @@ const jupiter = {
   },
 };
 
+// Dado o código abaixo, qual a ordem de finalização de execução das linhas comentadas?
 console.log(planetDistanceFromSun(mars)); // A
 console.log(planetDistanceFromSun(venus)); // B
 console.log(planetDistanceFromSun(jupiter)); // C
+// Resposta A, B, C
