@@ -10,7 +10,7 @@ const getMarsTemperature = () => {
 
 // let time = messageDelay(); // Faça em BabySteps para ter certeza do que esta fazendo
 // console.log(time); // Sempre verifique o tipo de cada variável
-// setTimeout(() => sendMarsTemperature(), messageDelay()); // o segundo parâmetro da setTimeOut só pode ser um numero ou variável com um numero
+// setTimeout(() => sendMarsTemperature(), messageDelay()); // o segundo parâmetro da setTimeOut só pode ser um numero ou variável com o numero
 // console.log(getMarsTemperature());
 // setTimeout(() => getMarsTemperature(), messageDelay); // Não funciona! Existe uma diferença entre um função rododa e só o nome da variável, quando você coloca os parenteses a função esta sendo chamada, quando não coloca é apenas a função, só descobri isso por causa dos babysteps.
 

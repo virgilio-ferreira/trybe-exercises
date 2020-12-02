@@ -1,28 +1,34 @@
 //exercicio6
 const messageDelay = () => {
   const time = Math.floor(Math.random() * 5000);
-  console.log(time);
+  // console.log(time);
   return time;}
 
 const getMarsTemperature = () => {
   const maxTemperature = 58;
-  return Math.floor(Math.random() * maxTemperature);
+  const T = Math.floor(Math.random() * maxTemperature);
+  console.log(`${T} em °C`);
+  return T
 }
 
-const toFahrenheit = (degreeCelsius) => (degreeCelsius * 9/5) + 32;
+const toFahrenheit = (degreeCelsius) => {
+ const TC = (degreeCelsius * 9/5) + 32;
+  console.log(`${TC} em °F`);
+ return ((degreeCelsius * 9/5) + 32);
+}
 const temperatureInFahrenheit = (temperature) => console.log(`It is currently ${toFahrenheit(temperature)}ºF at Mars`);
 const greet = (temperature) => console.log(`Hi there! Curiosity here. Right now is ${temperature}ºC at Mars`);
 
 const handleError = (errorReason) => console.log(`Error getting temperature: ${errorReason}`);
 
 // definição da função sendMarsTemperature...
-const sendMarsTemperature = (task) => {
+const sendMarsTemperature = (task, error) => {
   const isRobotAvailable = Math.random() <= 0.6;
   if (isRobotAvailable) {
-    setTimeout(() => task(toFahrenheit(getMarsTemperature())), messageDelay());
+    setTimeout(() => task(getMarsTemperature()), messageDelay());
   } else {
     const problem = 'Robot is busy';
-    setTimeout(() => handleError(problem), messageDelay()); 
+    setTimeout(() => error(problem), messageDelay()); 
   }
 }
 
